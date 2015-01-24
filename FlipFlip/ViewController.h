@@ -16,7 +16,6 @@
     CGFloat lastDegrees;
     FlippableBlockView *blockToManipulate, *tempTransitionBlock;
     int currentPageIndex;
-    //UIView *topBlockFixedView, *bottomBlockFixedView, *bottomBlockBehindFixedView, *topBlockBehindFixedView, *currentlyDisplayedFixedView;
 }
 
 @property UIPanGestureRecognizer *panGesture;
