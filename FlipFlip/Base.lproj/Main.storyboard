@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="Rb3-Iv-KUC">
+            <objects>
+                <viewController storyboardIdentifier="demoVC" id="0oX-7b-QJh" customClass="DemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ab3-G5-CaA"/>
+                        <viewControllerLayoutGuide type="bottom" id="VvU-ys-aVF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="huU-84-Aof">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-Fv-drX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="width" secondItem="huU-84-Aof" secondAttribute="width" id="Afn-Qg-wlG"/>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="bottom" secondItem="VvU-ys-aVF" secondAttribute="top" id="RMZ-Rj-6VN"/>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="width" secondItem="huU-84-Aof" secondAttribute="height" multiplier="1:2" id="SRK-K6-yi3"/>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="top" secondItem="huU-84-Aof" secondAttribute="top" id="Y9y-pf-GCD"/>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="leading" secondItem="huU-84-Aof" secondAttribute="leading" id="ciS-Hq-mVU"/>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="leading" secondItem="huU-84-Aof" secondAttribute="leading" id="gqm-OI-zC5"/>
+                            <constraint firstItem="Vfa-Fv-drX" firstAttribute="height" secondItem="huU-84-Aof" secondAttribute="height" id="nGO-68-bNs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Vfa-Fv-drX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Afn-Qg-wlG"/>
+                                <exclude reference="RMZ-Rj-6VN"/>
+                                <exclude reference="SRK-K6-yi3"/>
+                                <exclude reference="Y9y-pf-GCD"/>
+                                <exclude reference="ciS-Hq-mVU"/>
+                                <exclude reference="gqm-OI-zC5"/>
+                                <exclude reference="nGO-68-bNs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Vfa-Fv-drX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Afn-Qg-wlG"/>
+                                <include reference="RMZ-Rj-6VN"/>
+                                <exclude reference="SRK-K6-yi3"/>
+                                <exclude reference="Y9y-pf-GCD"/>
+                                <include reference="ciS-Hq-mVU"/>
+                                <exclude reference="gqm-OI-zC5"/>
+                                <include reference="nGO-68-bNs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vfa-Fv-drX" id="zSV-Av-m0L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJw-Na-9ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
