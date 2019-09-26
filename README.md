@@ -1,5 +1,5 @@
 # FlipFlip-Flipboard-Prototype
-A barebones control similar to Flipboard's page flipping animation.
+(This is an experimental UI/UX design project for fun). A barebones control similar to Flipboard's page flipping animation.
 
 ![ScreenShot](http://giant.gfycat.com/AdeptUnimportantGlassfrog.gif)
 
