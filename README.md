@@ -29,6 +29,6 @@ It works well enough, but some things I would have liked to fix/improve are:
 - Finer touch: it gets a bit touchy when you try to swipe fast, also the animation durations are fixed in time.
 - Page limits: Rather than stop allowing the page to turn when you hit either `0` or `self.orderdViewArray.count`, it would be nicer to allow some degree of flipping and show a black view behind. 
 
-###Helpful sources I used:  
+### Helpful sources I used:  
 I got started with Stephen Zaharuk's proof of concept:
 http://www.infragistics.com/community/blogs/stevez/archive/2014/04/08/ios-objective-c-how-to-simulate-a-flipboard-style-page-turn.aspx
